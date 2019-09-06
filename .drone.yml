@@ -127,6 +127,7 @@ steps:
     - push
 
 - name: release-docker-latest
+  failure: ignore
   image: plugins/docker
   settings:
     build_args_from_env:
